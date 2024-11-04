@@ -1,37 +1,58 @@
 .App {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
+    display: flex; /* Usar flexbox para la disposición */
+    background: #f4f4f4; /* Color de fondo suave */
+    min-height: 100vh; /* Asegurarte que ocupe toda la altura */
+    padding: 20px; /* Espaciado interno */
 }
 
-.dashboard-container {
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    margin-top: 20px;
-}
-
-.tasks-column {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-    border-right: 2px solid #ddd;
-}
-
+.tasks-column,
 .activities-column {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-    padding-left: 20px;
+    flex: 1; /* Hacer que ambas columnas ocupen el mismo espacio */
+    margin: 10px; /* Espacio entre columnas */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background: #fff; /* Fondo blanco para las columnas */
+    padding: 20px; /* Espaciado interno */
+    transition: transform 0.2s; /* Efecto de transformación suave */
 }
 
-h1 {
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 2em;
+h2 {
+    color: #333; /* Color del texto del encabezado */
+    margin-bottom: 10px; /* Espacio inferior para los encabezados */
 }
 
-.add-task-section {
-    margin-bottom: 20px;
+button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    margin-top: 10px; /* Espacio superior para los botones */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin-top: 20px; /* Espacio superior para la tabla */
+}
+
+th, td {
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+    border-bottom: 1px solid #ddd; /* Línea separadora */
+}
+
+th {
+    background-color: #f8f9fa; /* Color de fondo de la cabecera */
+    color: #495057; /* Color del texto de la cabecera */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse sobre una fila */
 }
