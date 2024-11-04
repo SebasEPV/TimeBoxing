@@ -1,58 +1,58 @@
 .App {
-    display: flex; /* Usar flexbox para la disposición */
-    background: #f4f4f4; /* Color de fondo suave */
-    min-height: 100vh; /* Asegurarte que ocupe toda la altura */
-    padding: 20px; /* Espaciado interno */
+    display: flex; 
+    background: #f4f4f4; 
+    min-height: 100vh; 
+    padding: 20px; 
 }
 
 .tasks-column,
 .activities-column {
-    flex: 1; /* Hacer que ambas columnas ocupen el mismo espacio */
-    margin: 10px; /* Espacio entre columnas */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    background: #fff; /* Fondo blanco para las columnas */
-    padding: 20px; /* Espaciado interno */
-    transition: transform 0.2s; /* Efecto de transformación suave */
+    flex: 1; 
+    margin: 10px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    background: #fff; 
+    padding: 20px; 
+    transition: transform 0.2s; 
 }
 
 h2 {
-    color: #333; /* Color del texto del encabezado */
-    margin-bottom: 10px; /* Espacio inferior para los encabezados */
+    color: #333; 
+    margin-bottom: 10px; 
 }
 
 button {
-    background-color: #007bff; /* Color de fondo del botón */
-    color: white; /* Color del texto del botón */
-    border: none; /* Sin borde */
-    padding: 10px 15px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor de puntero */
-    margin-top: 10px; /* Espacio superior para los botones */
-    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 10px; 
+    transition: background-color 0.3s; 
 }
 
 button:hover {
-    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+    background-color: #0056b3; 
 }
 
 table {
-    width: 100%; /* Ancho completo */
-    border-collapse: collapse; /* Colapsar bordes */
-    margin-top: 20px; /* Espacio superior para la tabla */
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
 }
 
 th, td {
-    padding: 10px; /* Espaciado interno */
-    text-align: left; /* Alinear texto a la izquierda */
-    border-bottom: 1px solid #ddd; /* Línea separadora */
+    padding: 10px; 
+    text-align: left; 
+    border-bottom: 1px solid #ddd; 
 }
 
 th {
-    background-color: #f8f9fa; /* Color de fondo de la cabecera */
-    color: #495057; /* Color del texto de la cabecera */
+    background-color: #f8f9fa; 
+    color: #495057; 
 }
 
 tr:hover {
-    background-color: #f1f1f1; /* Color de fondo al pasar el mouse sobre una fila */
+    background-color: #f1f1f1; 
 }

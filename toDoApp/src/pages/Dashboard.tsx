@@ -6,10 +6,10 @@ import AddActivityModal from './../components/AddActivityModal';
 const Dashboard: React.FC = () => {
     const [isTaskModalOpen, setIsTaskModalOpen] = useState(false);
     const [isActivityModalOpen, setIsActivityModalOpen] = useState(false);
-    const [tasks, setTasks] = useState<{ id: number; title: string }[]>([]); // Cambia esto con la lógica para obtener tareas
+    const [tasks, setTasks] = useState<{ id: number; title: string }[]>([]); 
 
     const handleAddTask = (task: { title: string; description: string; priority: boolean; dueDate: string }) => {
-        // Lógica para agregar una tarea (actualizar el estado de tareas)
+        // Lógica para agregar una tarea
     };
 
     const handleAddActivity = (activity: {
@@ -20,7 +20,7 @@ const Dashboard: React.FC = () => {
         dueDate: string;
         taskId: number;
     }) => {
-        // Lógica para agregar una actividad (puedes enviarla a tu backend aquí)
+        // Lógica para agregar una actividad
     };
 
     return (
@@ -45,7 +45,6 @@ const Dashboard: React.FC = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {/* Aquí puedes mapear las actividades y mostrarlas en filas */}
                     </tbody>
                 </table>
             </div>
@@ -60,7 +59,7 @@ const Dashboard: React.FC = () => {
                 isOpen={isActivityModalOpen}
                 onRequestClose={() => setIsActivityModalOpen(false)}
                 onAddActivity={handleAddActivity}
-                tasks={tasks} // Pasa la lista de tareas al modal de actividades
+                tasks={tasks}
             />
         </div>
     );

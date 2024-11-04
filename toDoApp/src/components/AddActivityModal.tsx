@@ -12,9 +12,9 @@ interface AddActivityModalProps {
         startTime: string;
         endTime: string;
         dueDate: string;
-        taskId: number; // ID de la tarea relacionada
+        taskId: number; 
     }) => void;
-    tasks: { id: number; title: string }[]; // Lista de tareas para el select
+    tasks: { id: number; title: string }[]; 
 }
 
 const AddActivityModal: React.FC<AddActivityModalProps> = ({
@@ -33,7 +33,7 @@ const AddActivityModal: React.FC<AddActivityModalProps> = ({
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         onAddActivity({ title, description, startTime, endTime, dueDate, taskId });
-        onRequestClose(); // Cerrar el modal después de agregar la actividad
+        onRequestClose(); 
     };
 
     return (

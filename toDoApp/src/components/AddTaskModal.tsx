@@ -19,7 +19,7 @@ const AddTaskModal: React.FC<AddTaskModalProps> = ({ isOpen, onRequestClose, onA
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         onAddTask({ title, description, priority, dueDate });
-        onRequestClose(); // Cerrar el modal después de agregar la tarea
+        onRequestClose(); 
     };
 
     return (
