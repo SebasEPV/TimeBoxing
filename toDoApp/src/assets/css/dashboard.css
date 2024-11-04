@@ -1,0 +1,37 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.dashboard-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.tasks-column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 2px solid #ddd;
+}
+
+.activities-column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.add-task-section {
+    margin-bottom: 20px;
+}

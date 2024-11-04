@@ -1,0 +1,53 @@
+.add-task-form {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffffff; /* Fondo blanco para un look más limpio */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar el formulario */
+    border-radius: 8px;
+}
+
+.add-task-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #007BFF; /* Borde inferior azul */
+    background-color: transparent; /* Fondo transparente */
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.add-task-form input[type="text"]:focus {
+    border-bottom-color: #0056b3; /* Cambia a un azul más oscuro al hacer focus */
+}
+
+.add-task-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 25px; /* Botón redondeado */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-task-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Pequeño efecto de levitación al pasar el cursor */
+}
+
+.add-task-form button:active {
+    transform: translateY(0); /* Restablece la posición al hacer clic */
+}
+
+/* Espaciado y estilo limpio para los títulos */
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}

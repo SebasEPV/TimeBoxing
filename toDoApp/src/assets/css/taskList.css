@@ -1,0 +1,70 @@
+/* taskList.css */
+
+.task-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.task-list .task-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.task-list .task-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.task-list .task-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 0.5rem;
+}
+
+.task-list .task-priority {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #ff6b6b;
+    margin-top: 0.5rem;
+}
+
+.task-list .task-activities {
+    margin-top: 1rem;
+    padding: 0;
+    list-style-type: none;
+}
+
+.task-list .task-activity {
+    font-size: 0.95rem;
+    color: #555555;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.task-list .task-activity:last-child {
+    border-bottom: none;
+}
+
+.task-list .add-activity-button {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.task-list .add-activity-button:hover {
+    background-color: #0056b3;
+}
